@@ -1,5 +1,6 @@
-<?php require("header.php"); ?>
-
+<?php require("head.php"); ?>
+<body>
+    
 <!-- content -->
 <div class="content">
 
