@@ -2,7 +2,7 @@ $(function() {
 
     function singleItem() {
         $.ajax({
-            url: "http://localhost/Mike/php-object-webforce3/single/" + idItem,
+            url: "http://localhost/Mike/MVC/php-object-webforce3/single/" + idItem,
             method: "POST"
         }).done(function(data) {
 
@@ -26,7 +26,7 @@ $(function() {
 
     function shopListItem() {
         $.ajax({
-            url: "http://localhost/Mike/php-object-webforce3/shop-list",
+            url: "http://localhost/Mike/MVC/php-object-webforce3/shop-list",
             method: "POST",
             data: { price: "0 and 10" }
         }).done(function(data) {

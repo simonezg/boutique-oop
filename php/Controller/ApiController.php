@@ -29,13 +29,14 @@
                 $search = true;
             }
 
-
-            $sql = substr($sql, 0, -4);
-            // Si aucun filtre n'ai demander 
+            //$sql = substr($sql, 0, -4);
+            // Si aucun filtre n'est demandé
             if($search == false)
                 $sql = 1;
+            else
+                $sql .= " iditems = items_iditems";
 
-            $items = $this->itemsModel->select("*", "items", $sql);
+            $items = $this->itemsModel->select("i.*, p.url", "items i, pictures p", $sql);
             echo json_encode($items);
         }
     }

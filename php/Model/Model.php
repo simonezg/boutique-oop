@@ -35,8 +35,8 @@
 				$result = $this->pdo->query("SELECT $theChamps FROM $table WHERE $theWhere");
 				return $result->fetchAll(PDO::FETCH_ASSOC);	
 			}catch (Exception $e) {
-				die("Votre traitement n'a pas abouti  \n");
-				// $e->getMessage() permet d'afficher l'erreur SQL;
+				//die("Votre traitement n'a pas abouti test \n");
+				$e->getMessage(); //permet d'afficher l'erreur SQL;
 			}		
 		}
 	

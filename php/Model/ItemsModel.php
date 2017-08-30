@@ -124,7 +124,7 @@
 
         /******** CategorieModel ************/
         public function listenerCategories(){
-            return $this->select("name", "categories");
+            return $this->select("idcategories, name", "categories");
         }
 
     }
